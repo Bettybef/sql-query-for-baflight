@@ -1,0 +1,11 @@
+SELECT
+  flight_number,
+  actual_flight_date,
+  arrival_city,
+  total_passengers,
+  departure_city
+FROM
+  ba_flights
+WHERE
+  status = 'Cancelled'
+  AND departure_city = 'London';
